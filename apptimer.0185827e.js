@@ -7,3 +7,4 @@ function e(e,r){for(var n=0;n<r.length;n++){var t=r[n];t.enumerable=t.enumerable
 },{"@babel/runtime/helpers/classCallCheck":"fcMS","@babel/runtime/helpers/createClass":"P8NW"}],"KChq":[function(require,module,exports) {
 "use strict";var t=e(require("./TimerWaktu"));function e(t){return t&&t.__esModule?t:{default:t}}var r=document.querySelector("#input_duration"),u=document.querySelector("#button_start"),o=document.querySelector("#button_pause"),a=document.querySelector("#lingkarjam"),n=document.querySelector("#latarlingkarjam"),s=a.getAttribute("r"),i=2*parseFloat(s)*Math.PI;a.setAttribute("stroke-dasharray",i),n.setAttribute("stroke-dasharray",i);var c=0,l=0,d=new t.default(r,u,o,{onStart:function(t){l=t},onTick:function(t){c=i*t/l-i,a.setAttribute("stroke-dashoffset",c)},onComplete:function(){console.log("Timer sudah selesai")}});
 },{"./TimerWaktu":"Wfr8"}]},{},["KChq"], null)
+//# sourceMappingURL=/demo-timerapps/apptimer.0185827e.js.map
